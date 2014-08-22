@@ -1,0 +1,432 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background:#fffeeb;
+	color:#002200;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%;
+	margin:0;
+	padding:0;
+	height:100%;
+}
+body {
+	margin:0;
+}
+/*** header styles ***/
+header#page_header {
+	background:#ffffff url(../images/wood_btm.jpg) bottom center repeat-x;
+	position:fixed;
+	top:0;
+	line-height:100%;
+	width:100%;	
+	min-height:125px;
+	z-index:800;
+}
+.inner {
+	margin:0 auto;
+	width:994px;	
+}
+.inner #logo {
+	display:block;
+	float:left;
+	margin:0;
+	width:306px;
+	height:105px;
+}
+.inner ul#primaryNav {
+	display:block;
+	float:right;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	list-style-image:none;
+}
+ul#primaryNav .quote {
+	display:block;
+	font-size:80%;
+	margin:5px 12px 40px 0;
+	text-align:right;
+}
+ul#primaryNav li.navLink {
+	display:inline;
+	margin:0 5px 0 34px;
+	text-align:center;
+}
+ul#primaryNav li.navLink a {
+	background:none;
+	color:#002200;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size:160%;
+	letter-spacing:1px;
+	padding:3px 10px;
+	-moz-border-radius:7px;
+ 	border-radius:7px;
+ 	height:35px;
+	text-decoration:none;
+}
+ul#primaryNav li.navLink a:hover, ul#primaryNav li.navLink a.active {
+	background:#002200;
+	color:#fcf8af;
+}
+/*** common elements ***/
+h1, h2, h3 { font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif; }
+h1, h2 { letter-spacing:1px; }
+#company, #design, #gallery, #contactUs, footer#page_footer {
+	background:#ffffff;
+	z-index:100;	
+}
+header#page_header, #company, #design, #gallery {
+	-moz-box-shadow:0 6px 5px #222222;
+	-webkit-box-shadow:0 6px 5px #222222;
+	box-shadow:0 7px 5px #222222;
+}
+#company article h2, #design article h2, #gallery article h2, #contactUs article h2 {
+	font-size:185%;
+	margin:0 0 30px 0;
+}
+#mainCopy article p, #company article p, #design article p, #gallery article p, #contactUs article p {
+	line-height:130%;
+}
+/*** scroll button ***/
+#scrollBtn {
+	margin:0 auto;
+	width:150px;
+}
+#scrollBtn a article {
+	position:fixed;
+	cursor:pointer;
+	bottom:0;
+	width:150px;
+	height:50px;
+	z-index:900;
+}
+#scrollBtn a article.scrollDown {
+	background:url(../images/scrollDownBtn.png);
+}
+#scrollBtn a article.scrollUp {
+	background:url(../images/scrollUpBtn.png);
+}
+/*** slideshow section ***/
+#mainCopy h1 {
+	font-size:220%;
+	margin:0 0 30px 0;
+}
+#mainCopy article {
+	margin:0 auto;
+	width:994px;
+}
+#mainCopy article div {
+	position:absolute;
+	background:url(../images/contentBG.png);
+	margin:490px auto;
+	padding:30px 30px 20px 30px;
+	width:450px;
+	z-index:100;	
+}
+#mainSlide {
+	position:relative;
+	min-height:860px;
+	overflow:hidden;
+	z-index:1;
+}
+.hideSlides {
+	display:none;	
+}
+/*** content scrolling backgrounds ***/
+#contentBGOne {
+	position:relative;
+	background:url(../images/background6.jpg) 0 -1000px no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	padding:0 0 450px 0;
+	z-index:2;
+}
+#contentBGTwo {
+	position:relative;
+	background:url(../images/background7.jpg) 0 -1000px no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	padding:0 0 450px 0;
+	z-index:2;
+}
+#contentBGThree {
+	position:relative;
+	background:url(../images/background8.jpg) 0 -1000px no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	padding:0 0 450px 0;
+	z-index:2;
+}
+/*** about us section ***/
+#companyLink {
+	display:block;
+	height:35px;
+	margin-top:-35px;
+	visibility:hidden;
+}
+#company {
+	position:relative;
+	min-height:600px;
+	width:100%;
+}
+#company article {
+	margin:0 auto;
+	padding:150px 20px 50px 20px;
+	width:994px;
+}
+#company article #companyIMG {
+	float:left;
+	margin:0 20px 10px 0;
+	width:300px;
+	height:400px;
+}
+/*** design section ***/
+#designLink {
+	display:block;
+	height:125px;
+	margin-top:-125px;
+	visibility:hidden;
+}
+#design {
+	position:relative;
+	min-height:650px;
+	width:100%;
+}
+#design article {
+	margin:0 auto;
+	padding:50px 20px;
+	width:994px;
+}
+#design article p { margin:0 0 35px 0; }
+#design article section#plans01 {
+	float:left;
+	width:366px;	
+}
+#design article section#plans02 {
+	float:left;
+	width:222px;
+}
+#design article section#plans03 {
+	float:left;
+	width:366px;
+}
+#design article .plansIMG01 {
+	margin:0 40px 0 0;
+	width:346px;
+	height:181px;
+}
+#design article .plansIMG02 {
+	margin:0 20px;
+	width:182px;
+	height:335px;
+}
+#design article .plansIMG03 {
+	margin:0 0 0 40px;
+	width:346px;
+	height:181px;
+}
+#design article h3.testimonial {
+	background:url(../images/quoteBG.png) top left no-repeat;
+	font-size:130%;
+	font-style:italic;
+	margin:15px 0 4px 0;
+	padding:0 0 0 25px;
+	text-align:left;
+}
+#design article p.citation {
+	margin-bottom:15px;
+	font-style:italic;
+	text-align:right;	
+}
+/*** gallery section ***/
+#galleryLink {
+	display:block;
+	height:125px;
+	margin-top:-125px;
+	visibility:hidden;
+}
+#gallery {
+	position:relative;
+	min-height:660px;
+	width:100%;
+}
+#gallery article {
+	margin:0 auto;
+	padding:50px 20px;
+	width:994px;
+}
+#gallery article ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	list-style-image:none;
+}
+#gallery article ul li.first {
+	float: left;
+	margin:0 0 30px 0;
+}
+#gallery article ul li {
+	float:left;
+	margin:0 0 30px 48px;	
+}
+/*** design section ***/
+#contactUsLink {
+	display:block;
+	visibility:hidden;	
+}
+#contactUs {
+	position:relative;
+	min-height:490px;
+	width:100%;
+}
+#contactUs article {
+	margin:0 auto;
+	padding:50px 20px 50px 20px;
+	width:994px;
+}
+#contactUs article #contactUsIMG {
+	float:left;
+	margin:0 25px 70px 0;
+	width:400px;
+	height:300px;
+}
+form {
+	margin:30px 0 0 0;	
+}
+form fieldset {
+	display:inline;
+	border:0;
+	margin:0;
+	padding:0;	
+}
+form label {
+	font-size:90%;
+	font-weight:bold;
+	margin-right:5px;
+	line-height:120%;
+}
+form fieldset#nameField input { width:248px; *width:250px; }
+form fieldset#phoneField input { width:152px; *width:154px }
+form fieldset#emailField input { width:150px; *width:152px }
+form fieldset#commentsField textarea.commentsBox { width:100%; }
+form label#workLabel {
+	float:left;
+	margin-bottom:20px;
+	width:91px;
+}
+form label#emailLabel {
+	float:left;
+	width:107px;
+}
+form label#commentsLabel {
+	display:block;
+	margin-bottom: 5px;	
+}
+form input, form select {
+	margin:0 20px 20px 0;
+}
+form select.selectBox {
+	padding:0 0 0 12px;	
+}
+form fieldset#submitBtn {
+	display:block;
+	margin:20px 0 0 0;
+}
+form fieldset#submitBtn input {
+	border:0;
+	background:url(../images/submit_btn.png) no-repeat;
+	color:#ffffff;
+	cursor:pointer;
+	width:75px;
+	height:30px;
+	text-indent:-9999px;
+}
+/*** footer section ***/
+footer#page_footer {
+	position:relative;
+	border-top:1px solid #002201;
+	background:#ffffff;
+	color:#002200;
+	clear:both;
+	width:100%;
+	padding:0 0 10px 0;
+	display:block;
+	text-align:center;
+	vertical-align:bottom;
+}
+footer#page_footer nav {
+	margin:0 0 40px 100px;
+}
+footer#page_footer nav ul li {
+	font-weight:bold;
+	display:inline;
+}
+footer#page_footer nav ul li a {
+	color:#002201;
+	display:inline;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size:120%;
+	font-weight:100;
+	letter-spacing:1px;
+	line-height:100%;
+	margin-right:140px;
+	text-align:center;
+	text-decoration:none;
+}
+footer#page_footer p.copyright {
+	clear:both;
+	font-size:80%;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 830px) {
+
+	.inner {
+		width:790px;
+	}
+	.inner #logo {
+		width:275px;
+		height:94px;
+	}
+	ul#primaryNav .quote {
+		margin:5px 10px 30px 0;
+	}
+	ul#primaryNav li.navLink {
+		margin:0 5px 0 27px !important;
+	}
+	ul#primaryNav li.navLink a {
+		font-size:125%;
+		padding:2px 5px;
+		-moz-border-radius:5px;
+		border-radius:5px;
+		height:30px;
+	}
+		
+}
+@media only screen and (max-width: 1310px) {
+
+	ul#primaryNav li.navLink {
+		margin:0 5px 0 34px;
+	}
+	
+	ul#supersized {
+		margin-top:0;	
+	}
+	
+	#gallery article ul li {
+		margin:0 0 30px 46px;	
+	}
+	
+	footer#page_footer nav {
+		margin:0 0 40px 90px;
+	}
+
+}
